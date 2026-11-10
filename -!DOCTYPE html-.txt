@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First GitHub Game</title>
+    <style>
+        body { text-align: center; font-family: sans-serif; background: #222; color: #fff; margin-top: 50px; }
+        button { font-size: 24px; padding: 15px 30px; cursor: pointer; border-radius: 8px; border: none; background: #007bff; color: white; }
+        button:hover { background: #0056b3; }
+        h1 { font-size: 48px; }
+    </style>
+</head>
+<body>
+    <h1>Score: <span id="score">0</span></h1>
+    <button onclick="clickButton()">Click Me!</button>
+
+    <script>
+        let score = 0;
+        function clickButton() {
+            score++;
+            document.getElementById('score').innerText = score;
+        }
+    </script>
+</body>
+</html>
